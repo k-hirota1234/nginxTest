@@ -33,7 +33,3 @@ jobs:
         IMAGE_TAG=$(echo ${{ github.ref }} | sed -e "s#refs/tags/##g")
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-<<<<<<< HEAD
- 
-=======
->>>>>>> d3f5c2fd29e3e25a107305355e825e3c6eee5d30
